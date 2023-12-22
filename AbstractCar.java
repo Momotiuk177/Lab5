@@ -11,7 +11,7 @@ abstract class AbstractCar {
         this.horsepower = horsepower;
         this.weight = weight;
         this.maxSpeed = maxSpeed;
-        this.price = 25000.0;
+        this.price = price;
         this.country = country;
     }
     public String getModel() {
