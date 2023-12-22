@@ -6,24 +6,20 @@ class Car extends AbstractCar {
         this.engineStarted = false;
     }
 
-    // Реалізація абстрактного методу
     public void specialFeature() {
         System.out.println();
     }
 
-    // Перевизначений метод
     public void startEngine() {
         this.engineStarted = true;
         System.out.println("Двигун автомобіля запущено.");
     }
 
-    // Перевантажений метод
     public void startEngine(String ignitionType) {
         this.engineStarted = true;
         System.out.println("Двигун автомобіля запущено за допомогою " + ignitionType);
     }
 
-    // Додатковий метод
     public void drive() {
         if (engineStarted) {
             System.out.println("Автомобіль рухається з середньою швидкістю 140 км/год по трасі Київ-Чоп.");
